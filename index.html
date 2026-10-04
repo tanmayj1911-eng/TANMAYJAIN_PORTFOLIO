@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REPLACE: Change website title if desired -->
+  <title>Tanmay Jain | B.Tech Portfolio</title>
+  <meta name="description" content="Personal portfolio of Tanmay Jain - First-Year B.Tech Student at JECRC University. Explore education, skills, projects including SIH 26033, and certifications.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       SITE HEADER & NAVIGATION BAR (SMOOTH-SCROLLING SPA MENU)
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo / Monogram -->
+      <a href="#about" class="brand-logo" aria-label="Tanmay Jain Portfolio Home">
+        <span class="brand-badge">TJ</span>
+        <span>Tanmay <span class="highlight">Jain</span></span>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Button -->
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Navigation Links (Anchor links for single-page scrolling) -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN UNIFIED PORTFOLIO CONTENT
+       ======================================================================== -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- ====================================================================
+           SECTION 1: HERO & ABOUT
+           ==================================================================== -->
+      <section id="about" class="content-section" style="padding-top: 1rem;" aria-labelledby="hero-heading">
+        <div class="hero-section">
+          <!-- Hero Introduction Text Column -->
+          <div class="hero-content">
+            <div class="greeting-badge">
+              <span class="pulse-dot"></span>
+              <!-- REPLACE: Customize your current status -->
+              <span>Available for Collaborations &amp; Hackathons</span>
+            </div>
+
+            <!-- REPLACE: Edit your name, title, and bio below -->
+            <h1 id="hero-heading" class="hero-title">
+              Hello, I'm <span class="gradient-text">Tanmay Jain</span>.
+            </h1>
+
+            <p class="hero-tagline">
+              First-Year B.Tech Student @ JECRC University &bull; Aspiring VLSI, Chip Design Engineer
+            </p>
+
+            <p class="hero-bio">
+              I am a passionate first-year undergraduate pursuing Electronics &amp; Communication Engineering. 
+              I love turning logical problems into structured code, exploring front-end web technologies, 
+              and building impactful solutions like our Smart India Hackathon agricultural initiative. 
+              Currently sharpening my foundations in learning LLMs (like Claude, GPT, NotebookLLM, etc.), C/C++, and digital hardware concepts.
+            </p>
+
+            <!-- Call to Action Buttons -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Projects</span>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Get In Touch</span>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+              </a>
+              <a href="#education" class="btn btn-outline">
+                <span>My Journey</span>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links" aria-label="Social Media Links">
+              <a href="https://github.com/tanmayj1911-eng" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile" aria-label="GitHub Profile">
+                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/tanmay-jain-4769b6425/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcuidGbIJTzSHdfYh%2FBOyJA%3D%3D" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </a>
+              <a href="mailto:tanmayj1911@gmail.com" class="social-btn" title="Send Email" aria-label="Send Email">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Visual / Profile Photo Column -->
+          <div class="hero-visual">
+            <div class="avatar-wrapper">
+              <div class="float-card top-right">
+                <div class="float-card-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span style="display:block; font-size: 0.75rem; color: var(--text-muted);">College</span>
+                  <span>JECRC University</span>
+                </div>
+              </div>
+
+              <!-- Avatar Frame -->
+              <!-- REPLACE: Replace SVG placeholder with:
+                   <img src="images/profile.jpg" alt="Tanmay Jain" style="width:100%; height:100%; object-fit:cover;"> -->
+              <div class="avatar-inner">
+                <svg class="avatar-placeholder-svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+                <div class="avatar-caption">Tanmay Jain &bull; Student</div>
+              </div>
+
+              <div class="float-card bottom-left">
+                <div class="float-card-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span style="display:block; font-size: 0.75rem; color: var(--text-muted);">Hackathon</span>
+                  <span>SIH Team Contributor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats Grid -->
+        <div class="stats-grid" style="margin-top: 3.5rem;">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stat-number">1st Year</div>
+              <div class="stat-desc">B.Tech Electronics &amp; Communication</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stat-number">Featured</div>
+              <div class="stat-desc">Web &amp; Hardware Projects</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stat-number">SIH 2026</div>
+              <div class="stat-desc">Problem Statement 26033</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stat-number">Daily</div>
+              <div class="stat-desc">Problem Solving &amp; Practice</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 2: EDUCATION JOURNEY
+           ==================================================================== -->
+      <section id="education" class="content-section" aria-labelledby="education-heading">
+        <div class="section-header">
+          <div class="section-tag">Academic Background</div>
+          <h2 id="education-heading" class="section-title">Educational <span class="gradient-text">Milestones</span></h2>
+          <p class="section-subtitle">
+            A chronological timeline of my learning journey from foundational schooling to my current pursuit of Electronics &amp; Communication Engineering.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper" role="list">
+          
+          <!-- Timeline Item 1: B.Tech College -->
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2026 &ndash; 2030 (Expected)</span>
+                <span class="timeline-status">Currently Pursuing &bull; 1st Year</span>
+              </div>
+
+              <h3 class="timeline-title">Bachelor of Technology (B.Tech) in Electronics &amp; Communication Engineering</h3>
+              
+              <div class="timeline-institution">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+                <span>JECRC University, Jaipur</span>
+              </div>
+
+              <p class="timeline-desc">
+                Building solid foundations in semiconductor fundamentals, chip design, digital logic, and algorithmic problem solving. Actively participating in college hackathons and technical innovation initiatives.
+              </p>
+
+              <div class="timeline-score">
+                <span>Current Evaluation:</span>
+                <strong>CGPA: In Progress</strong>
+              </div>
+
+              <div class="timeline-courses">
+                <span class="tag">Digital Literacy</span>
+                <span class="tag">Engineering Chemistry (Theory)</span>
+                <span class="tag">Engineering Chemistry (Practical)</span>
+                <span class="tag">Engineering Mathematics</span>
+                <span class="tag">CPLT (Theory)</span>
+                <span class="tag">CPLT (Practical)</span>
+                <span class="tag">Semiconductor &amp; Chip Design (Truechip)</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 2: Class XII (Senior Secondary) -->
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2024 &ndash; 2026</span>
+                <span class="timeline-status">Completed</span>
+              </div>
+
+              <h3 class="timeline-title">Senior Secondary School (Class XII)</h3>
+              
+              <div class="timeline-institution">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                <span>Kendriya Vidyalaya No. 7 CISF, Jaipur &bull; CBSE</span>
+              </div>
+
+              <p class="timeline-desc">
+                Focused on core sciences with Mathematics, Physics, Chemistry, Computer Science, English, and Physical Education. Developed early analytical aptitude and foundational programming skills.
+              </p>
+
+              <div class="timeline-score">
+                <span>Final Score:</span>
+                <strong>Percentage: 86.8%</strong>
+              </div>
+
+              <div class="timeline-courses">
+                <span class="tag">Mathematics</span>
+                <span class="tag">Chemistry</span>
+                <span class="tag">Physics</span>
+                <span class="tag">Computer Science</span>
+                <span class="tag">English</span>
+                <span class="tag">Physical Education</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 3: Class X (Secondary School) -->
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">2022 &ndash; 2024</span>
+                <span class="timeline-status">Completed</span>
+              </div>
+
+              <h3 class="timeline-title">Secondary School Examination (Class X)</h3>
+              
+              <div class="timeline-institution">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                <span>Kendriya Vidyalaya No. 7 CISF, Jaipur &bull; CBSE</span>
+              </div>
+
+              <p class="timeline-desc">
+                Strong performance across core academic disciplines, logical reasoning, and co-curricular science and mathematics activities.
+              </p>
+
+              <div class="timeline-score">
+                <span>Final Score:</span>
+                <strong>Percentage: 86.8%</strong>
+              </div>
+
+              <div class="timeline-courses">
+                <span class="tag">Mathematics</span>
+                <span class="tag">Science</span>
+                <span class="tag">English</span>
+                <span class="tag">Hindi</span>
+                <span class="tag">Social Science</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 3: TECHNICAL & SOFT SKILLS
+           ==================================================================== -->
+      <section id="skills" class="content-section" aria-labelledby="skills-heading">
+        <div class="section-header">
+          <div class="section-tag">Competencies &amp; Toolkit</div>
+          <h2 id="skills-heading" class="section-title">My Skills &amp; <span class="gradient-text">Expertise</span></h2>
+          <p class="section-subtitle">
+            A blend of programming languages, web development fundamentals, developer tools, and interpersonal strengths.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Programming Languages</h3>
+                <span style="font-size: 0.82rem; color: var(--text-dim);">Core languages practiced in coursework</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C / C++</span>
+                  <span class="skill-level">Beginner &bull; 55%</span>
+                </div>
+                <div class="skill-bar" aria-label="C / C++ proficiency 55%">
+                  <div class="skill-progress" style="width: 55%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level">Intermediate &bull; 75%</span>
+                </div>
+                <div class="skill-bar" aria-label="MySQL proficiency 75%">
+                  <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level">Intermediate &bull; 75%</span>
+                </div>
+                <div class="skill-bar" aria-label="Python proficiency 75%">
+                  <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-level">Foundational &bull; 60%</span>
+                </div>
+                <div class="skill-bar" aria-label="JavaScript proficiency 60%">
+                  <div class="skill-progress" style="width: 60%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Technologies -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Web Technologies</h3>
+                <span style="font-size: 0.82rem; color: var(--text-dim);">Responsive UI and frontend architecture</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 (Semantic &amp; Accessible)</span>
+                  <span class="skill-level">Beginner &bull; 55%</span>
+                </div>
+                <div class="skill-bar" aria-label="HTML5 proficiency 55%">
+                  <div class="skill-progress" style="width: 55%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3 (Grid, Flexbox, Animations)</span>
+                  <span class="skill-level">Beginner &bull; 50%</span>
+                </div>
+                <div class="skill-bar" aria-label="CSS3 proficiency 50%">
+                  <div class="skill-progress" style="width: 50%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Responsive Web Design</span>
+                  <span class="skill-level">Beginner &bull; 50%</span>
+                </div>
+                <div class="skill-bar" aria-label="Responsive Design proficiency 50%">
+                  <div class="skill-progress" style="width: 50%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Developer Tools & Platforms -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Tools &amp; Platforms</h3>
+                <span style="font-size: 0.82rem; color: var(--text-dim);">Workflow, AI development and modern tools</span>
+              </div>
+            </div>
+
+            <div class="badges-container">
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Antigravity</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Google AI Studio</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Botpress</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Gamma</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Stitch</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>VS Code Editor</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Git Version Control</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>GitHub (Repos &amp; Issues)</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Chrome DevTools</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>GCC / G++ Compiler</span>
+            </div>
+          </div>
+
+          <!-- Category 4: AI, LLMs & Core Foundations -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">AI, LLMs &amp; Core Foundations</h3>
+                <span style="font-size: 0.82rem; color: var(--text-dim);">Modern AI workflows &amp; hardware basics</span>
+              </div>
+            </div>
+
+            <div class="badges-container">
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Learning LLMs (Claude, GPT, NotebookLLM, etc.)</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Digital Logic &amp; Electronics</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Object-Oriented Programming (OOP)</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Prompt Engineering &amp; AI Research</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Problem Solving &amp; Logic</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>File Handling in C/C++</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Soft Skills & Team Strengths -->
+          <div class="skills-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Soft Skills</h3>
+                <span style="font-size: 0.82rem; color: var(--text-dim);">Collaboration and interpersonal strengths</span>
+              </div>
+            </div>
+
+            <div class="badges-container">
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Team Collaboration (Hackathons)</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Analytical Thinking</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Fast Learner &amp; Adaptability</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Effective Communication</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Project Documentation</span>
+              <span class="badge-tag"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Time Management</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 4: PROJECTS SHOWCASE
+           ==================================================================== -->
+      <section id="projects" class="content-section" aria-labelledby="projects-heading">
+        <div class="section-header">
+          <div class="section-tag">Featured Engineering Work</div>
+          <h2 id="projects-heading" class="section-title">Projects &amp; <span class="gradient-text">Creations</span></h2>
+          <p class="section-subtitle">
+            From nationwide hackathon solutions to fundamental software engineering applications.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Featured Project: SIH Problem Statement 26033 -->
+          <article class="project-card featured">
+            <div class="project-card-header">
+              <span class="project-category-badge featured-pill">SIH PS 26033 &bull; Flagship</span>
+              <div class="project-icon-box" title="AgriTech Marketplace">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">KrishiSetu &mdash; Farmer-to-Buyer Marketplace (SIH 26033)</h3>
+              
+              <p class="project-description">
+                A direct digital commerce ecosystem designed for <strong>Smart India Hackathon Problem Statement 26033</strong>. 
+                Eliminates predatory commission agents and middlemen, allowing farmers to list fresh harvests directly for retail consumers and wholesale institutions.
+              </p>
+
+              <ul class="project-highlights">
+                <li>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span><strong>Direct Negotiation:</strong> Fair pricing transparency without intermediary broker cut.</span>
+                </li>
+                <li>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span><strong>Real-time Mandi Rates:</strong> Compares local government market rates against listed offerings.</span>
+                </li>
+                <li>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span><strong>Mobile-First UI:</strong> Lightweight, accessible interface built for rural network conditions.</span>
+                </li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">HTML5 / Semantic</span>
+                <span class="tag">CSS3 Grid</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SIH Hackathon</span>
+                <span class="tag">AgriTech</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-footer">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>View GitHub Repo</span>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                  </svg>
+                </a>
+                <a href="https://krishisetu-3-h1qy.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Live Demo</span>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="width: 14px; height: 14px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Personal Portfolio Website -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-category-badge">Frontend Architecture</span>
+              <div class="project-icon-box" title="Web Portfolio">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Responsive Student Portfolio</h3>
+              
+              <p class="project-description">
+                A modern, high-performance developer portfolio built from scratch using pure HTML5 and CSS3. 
+                Designed with a cohesive design system, custom CSS properties, responsive breakpoints, and strict zero-heavy-framework architecture.
+              </p>
+
+              <ul class="project-highlights">
+                <li>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span>Semantic sections with active scrollspy observer.</span>
+                </li>
+                <li>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span>Glassmorphism navbar, CSS variables, and fluid typography.</span>
+                </li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">CSS Variables</span>
+                <span class="tag">Vanilla JS</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <span>GitHub Code</span>
+                </a>
+                <a href="#about" class="btn btn-secondary btn-sm">
+                  <span>Back to Top</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 5: ACHIEVEMENTS & CERTIFICATES
+           ==================================================================== -->
+      <section id="achievements" class="content-section" aria-labelledby="achievements-heading">
+        <div class="section-header">
+          <div class="section-tag">Credentials &amp; Recognition</div>
+          <h2 id="achievements-heading" class="section-title">Certificates &amp; <span class="gradient-text">Honors</span></h2>
+          <p class="section-subtitle">
+            Verified certifications, hackathons, and academic milestones achieved throughout my educational path.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <!-- Achievement 1: Smart India Hackathon SIH 2026 -->
+          <article class="cert-card">
+            <div class="cert-badge-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+              </svg>
+            </div>
+
+            <div class="cert-issuer-row">
+              <span class="cert-issuer">AICTE &bull; MoE &bull; JECRC University</span>
+              <span class="cert-date">2026</span>
+            </div>
+
+            <h3 class="cert-title">Smart India Hackathon (SIH 2026) Selection</h3>
+
+            <p class="cert-description">
+              Selected as an internal college qualifier for <strong>Problem Statement 26033</strong> (Farmer-to-Buyer Direct Marketplace). Contributed to front-end wireframing, architecture planning, and functional pitch presentations.
+            </p>
+
+            <div class="cert-footer">
+              <span class="cert-id">ID: SIH26-PS26033</span>
+              <a href="#contact" class="btn btn-outline btn-sm">
+                <span>View Certificate</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Achievement 2: International Maths Olympiad -->
+          <article class="cert-card">
+            <div class="cert-badge-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 11h.01M12 11h.01M15 11h.01M4 19h16a2 2 0 002-2V7a2 2 0 00-2-2H4a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+
+            <div class="cert-issuer-row">
+              <span class="cert-issuer">Maths Olympiad Foundation</span>
+              <span class="cert-date">2022</span>
+            </div>
+
+            <h3 class="cert-title">International Maths Olympiad — Participant</h3>
+
+            <p class="cert-description">
+              Participated in the <strong>International Maths Olympiad (IMO)</strong> conducted by Maths Olympiad Foundation, demonstrating strong analytical reasoning, problem-solving speed, and mathematical aptitude at an international level.
+            </p>
+
+            <div class="cert-footer">
+              <span class="cert-id">IMO 2022</span>
+              <a href="#contact" class="btn btn-outline btn-sm">
+                <span>View Certificate</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Achievement 3: Vibe Coding Workshop – Digital Pet -->
+          <article class="cert-card">
+            <div class="cert-badge-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+
+            <div class="cert-issuer-row">
+              <span class="cert-issuer">JUMakerspace</span>
+              <span class="cert-date">2026</span>
+            </div>
+
+            <h3 class="cert-title">Vibe Coding Workshop — Digital Pet</h3>
+
+            <p class="cert-description">
+              Completed hands-on <strong>Vibe Coding Workshop on Digital Pet</strong> by JUMakerspace, exploring creative coding, interactive design, and building a virtual pet simulation using modern web technologies and AI-assisted development practices.
+            </p>
+
+            <div class="cert-footer">
+              <span class="cert-id">JUMakerspace 2026</span>
+              <a href="#contact" class="btn btn-outline btn-sm">
+                <span>View Certificate</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Achievement 4: AI Foundation Course – Jio Institute -->
+          <article class="cert-card">
+            <div class="cert-badge-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+
+            <div class="cert-issuer-row">
+              <span class="cert-issuer">Jio Institute</span>
+              <span class="cert-date">2026</span>
+            </div>
+
+            <h3 class="cert-title">AI Foundation Course</h3>
+
+            <p class="cert-description">
+              Completed the <strong>AI Foundation Course by Jio Institute</strong>, gaining structured knowledge of Artificial Intelligence concepts, machine learning fundamentals, real-world AI applications, and ethical considerations in AI deployment.
+            </p>
+
+            <div class="cert-footer">
+              <span class="cert-id">Jio Institute 2026</span>
+              <a href="#contact" class="btn btn-outline btn-sm">
+                <span>View Certificate</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Achievement 5: SkillQuest – Generative AI Literacy -->
+          <article class="cert-card">
+            <div class="cert-badge-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+
+            <div class="cert-issuer-row">
+              <span class="cert-issuer">Simplilearn &bull; SkillQuest</span>
+              <span class="cert-date">2026</span>
+            </div>
+
+            <h3 class="cert-title">SkillQuest — Generative AI Literacy</h3>
+
+            <p class="cert-description">
+              Completed <strong>Generative AI Literacy</strong> by Simplilearn's SkillQuest program, covering the fundamentals of generative AI, large language models (LLMs), prompt engineering, and responsible use of AI tools in professional and academic contexts.
+            </p>
+
+            <div class="cert-footer">
+              <span class="cert-id">Simplilearn SkillQuest 2026</span>
+              <a href="#contact" class="btn btn-outline btn-sm">
+                <span>View Certificate</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 6: CONTACT & CONNECT
+           ==================================================================== -->
+      <section id="contact" class="content-section" aria-labelledby="contact-heading">
+        <div class="section-header">
+          <div class="section-tag">Let's Connect</div>
+          <h2 id="contact-heading" class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">
+            Have an exciting project, hackathon idea, or just want to chat about tech? Feel free to drop a message!
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          
+          <!-- Left Column: Direct Contact Info Cards -->
+          <div class="contact-info-col">
+            <!-- Email Card -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4>Direct Email</h4>
+                <a href="mailto:tanmayj1911@gmail.com">tanmayj1911@gmail.com</a>
+                <p style="font-size: 0.82rem; color: var(--text-dim); margin-top: 2px;">Replies usually within 24 hours</p>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4>Phone / WhatsApp</h4>
+                <a href="tel:+916367500813">+91 6367500813</a>
+                <p style="font-size: 0.82rem; color: var(--text-dim); margin-top: 2px;">Available Mon &ndash; Fri (IST)</p>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4>Location &amp; Campus</h4>
+                <p>Jaipur, Rajasthan, India</p>
+                <p style="font-size: 0.85rem; color: var(--text-dim);">JECRC University</p>
+              </div>
+            </div>
+
+            <!-- Social Links Card -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                </svg>
+              </div>
+              <div class="contact-details" style="flex: 1;">
+                <h4>Social Profiles</h4>
+                <div class="social-links" style="margin-top: 0.6rem;">
+                  <a href="https://github.com/tanmayj1911-eng" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile" title="GitHub Profile">
+                    <svg fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/tanmay-jain-4769b6425/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcuidGbIJTzSHdfYh%2FBOyJA%3D%3D" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="contact-form-card">
+            <!-- TIP FOR FIRST-YEAR STUDENT: 
+                 To make this form deliver real emails without building a backend, 
+                 you can easily replace action="#" with a free Formspree endpoint:
+                 action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+            -->
+            <form id="portfolio-contact-form" class="contact-form" action="#" method="POST">
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Send a Direct Message</h3>
+
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="e.g. john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="e.g. Hackathon collaboration / Question" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                </svg>
+              </button>
+
+              <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <ul class="footer-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="social-links" style="margin-top: 0;">
+        <a href="https://github.com/tanmayj1911-eng" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+          <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/tanmay-jain-4769b6425/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcuidGbIJTzSHdfYh%2FBOyJA%3D%3D" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+          <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+        <a href="mailto:tanmayj1911@gmail.com" class="social-btn" aria-label="Email">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">
+        &copy; <span id="current-year">2025</span> Tanmay Jain. Built with pure HTML &amp; CSS.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
